@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-primary-50: #f0f7ff;
+  --color-primary-100: #e0f2fe;
+  --color-primary-500: #0ea5e9;
+  --color-primary-600: #0284c7;
+  --color-primary-700: #0369a1;
+
+  --color-finance-green: #10b981;
+  --color-finance-red: #ef4444;
+}
+
+/* Custom Hide Scrollbar Utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0b0f17; /* Slate dark background */
+  color: #f3f4f6;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+/* Smooth active press states for mobile tap targets */
+.tap-feedback {
+  transition: transform 0.1s ease, opacity 0.1s ease;
+}
+.tap-feedback:active {
+  transform: scale(0.96);
+  opacity: 0.9;
+}
+

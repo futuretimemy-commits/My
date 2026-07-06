@@ -1,0 +1,6 @@
+{
+  "name": "Financial Calendar & Tasks",
+  "description": "A simple and convenient mobile-first financial planner combining a weekly calendar, expense tracker, and financial task list in one view.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
